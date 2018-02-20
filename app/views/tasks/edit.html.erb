@@ -1,0 +1,4 @@
+<h1>Edit Task</h1>
+<%= render 'task_form', task: @task %>
+  <%= link_to "Delete", task_path(@task), method: :delete, data: { confirm: "Are your sure?" } %>
+  <p><%= link_to "Back to list", tasks_path %></p>
